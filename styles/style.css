@@ -29,9 +29,12 @@ body {
 
 /* variables and global clases */
 
+/* Navbar */
+
 /* main CSS Style */
 
 main {
+  margin-top: 80px;
 }
 
 /* navbar */
@@ -80,6 +83,14 @@ main {
 /* Section's classes */
 
 .main-section {
+  flex-direction: column;
+  color: #7F7F80;
+}
+
+.main-section h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
 }
 
 .section-two {
@@ -100,6 +111,9 @@ main {
 /* Articles' classes */
 
 .main-article {
+  height: 150px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .article-2 {
@@ -115,6 +129,36 @@ main {
 }
 
 .article-6 {
+}
+/* Article Ids */
+
+/* #first-article {
+  background-image: url("../img/image-1.jpg");
+  background-position: bottom;
+  background-size: cover;
+} */
+
+#second-article {
+  background-image: url("../img/image-2.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+#third-article {
+  background-image: url("../img/image-3.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.background {
+  z-index: -2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.opacity {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Style */
