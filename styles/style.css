@@ -1,21 +1,88 @@
 /* CSS Stylesheet. Cloning TNW site for practicing responsive design */
 body {
   font-family: Roboto, Arial, sans-serif;
+  margin: 0;
 }
+
+/* variables and global clases */
+
+:root {
+  --primary: #f42;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+}
+
+.link-decoration {
+  text-decoration: none;
+}
+
+/* variables and global clases */
 
 /* main CSS Style */
 
 main {
+}
 
+/* navbar */
+
+.navbar {
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  padding: 15px;
+}
+
+.logo .nav-logo {
+  width: 70px;
+  height: 15px;
+}
+
+.nav-icons i {
+  font-size: 20px;
+  padding: 15px;
+  border-left: 1px solid #ebebeb;
+}
+
+#search-icon {
+  color: #7e7e7e;
+}
+
+#bars-icon {
+  color: var(--primary);
+}
+
+.ads {
+  background-color: #ffdd33;
+  text-align: center;
+}
+
+.ads .link-decoration {
+  color: black;
+  display: inline-block;
+  font-size: 13px;
+  padding: 25px 0;
 }
 
 /* Section's classes */
-.main-section {
 
+.main-section {
 }
 
 .section-two {
-
 }
 
 .section-three {
@@ -33,32 +100,25 @@ main {
 /* Articles' classes */
 
 .main-article {
-
 }
 
 .article-2 {
-
 }
 
 .article-3 {
-
 }
 
 .article-4 {
-
 }
 
 .article-5 {
-
 }
 
 .article-6 {
-
 }
 
 /* Footer Style */
 
 /* Media allow us to create a responsive design */
-@media screen and (max-width:400px) {
-
+@media screen and (max-width: 400px) {
 }
