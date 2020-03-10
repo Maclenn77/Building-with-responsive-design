@@ -1,0 +1,64 @@
+/* CSS Stylesheet. Cloning TNW site for practicing responsive design */
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* main CSS Style */
+
+main {
+
+}
+
+/* Section's classes */
+.main-section {
+
+}
+
+.section-two {
+
+}
+
+.section-three {
+}
+
+.section-four {
+}
+
+.section-five {
+}
+
+.section-six {
+}
+
+/* Articles' classes */
+
+.main-article {
+
+}
+
+.article-2 {
+
+}
+
+.article-3 {
+
+}
+
+.article-4 {
+
+}
+
+.article-5 {
+
+}
+
+.article-6 {
+
+}
+
+/* Footer Style */
+
+/* Media allow us to create a responsive design */
+@media screen and (max-width:400px) {
+
+}
