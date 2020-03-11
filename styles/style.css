@@ -108,7 +108,7 @@ section {
   padding-bottom: 10px;
 }
 
-.latest-news{
+.latest-news {
 }
 
 .section-three {
@@ -131,8 +131,6 @@ section {
   flex-direction: column;
   justify-content: flex-end;
 }
-
-
 
 .funding-info {
 }
@@ -199,7 +197,9 @@ section {
   color: #999a9a;
 }
 
-.metadata span,.metadata time,.metadata i{
+.metadata span,
+.metadata time,
+.metadata i {
   margin-right: 5px;
 }
 
@@ -213,15 +213,14 @@ section {
   margin: 15px 0;
 }
 
-
 .stories {
   padding: 8px;
 }
 
-.stories img{
+.stories img {
   width: 75px;
   height: 75px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 /* Info of stories article */
@@ -248,21 +247,85 @@ section {
 
 /*Style in Funding rounds section */
 
-  .latest-funding a {
-    margin: 5px 0;
-  }
+.latest-funding a {
+  margin: 5px 0;
+}
 
+.sublinks{
+  flex-direction: column;
+}
 
+.sublinks a {
+  font-size: 14px;
+}
+
+.funding-info {
+  position: relative;
+  margin: 12px 0;
+  background-color: #fffaf8;
+}
+
+.funding-info img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.funding-info h4 {
+  background: #f42;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 16px 10px 85px;
+}
+
+.funding-amount {
+  padding: 10px 16px 10px 85px;
+  background-color: #ffebe7;
+}
+
+.funding-amount h4 {
+  padding: 0;
+  margin-bottom: 5px;
+  background-color: transparent;
+  color: #000;
+}
+
+.funding-amount h5 {
+  color: #000;
+  opacity: 0.5;
+  font-size: 11px;
+}
+
+.funding-icons {
+  font-size: 13px;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.funding-icons a {
+  color: #000;
+}
+.funding-icons span {
+  color: #555;
+}
+
+.funding-icons i {
+  margin-right: 10px;
+  font-size: 20px;
+}
 /* Footer Style */
 
 /* Media allow us to create a responsive design */
 @media screen and (min-width: 768px) {
-  .main-section{
-    display:grid;
+  .main-section {
+    display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
   }
-  #first-article{
+  #first-article {
     background-color: red;
   }
 }
