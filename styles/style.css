@@ -27,6 +27,15 @@ body {
   text-decoration: none;
 }
 
+.orange-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a.orange-link:hover {
+  color: #000;
+}
+
 /* variables and global clases */
 
 /* Navbar */
@@ -82,9 +91,14 @@ main {
 
 /* Section's classes */
 
-.main-section {
+section {
+  margin: 0 20px;
   flex-direction: column;
+}
+
+.main-section {
   color: #7f7f80;
+  margin: 0;
 }
 
 .main-section h2 {
@@ -94,10 +108,11 @@ main {
   padding-bottom: 10px;
 }
 
-.section-two {
+.latest-news{
 }
 
 .section-three {
+  justify-content: space-around;
 }
 
 .section-four {
@@ -119,7 +134,7 @@ main {
 
 
 
-.article-3 {
+.funding-info {
 }
 
 .article-4 {
@@ -192,13 +207,7 @@ main {
   color: #999a9a;
 }
 
-
-.latest-news{
-  margin: 0 20px;
-}
-
-.latest-news .title{
-  color: var(--primary);
+.title {
   font-size: 20px;
   font-weight: bold;
   margin: 15px 0;
@@ -214,6 +223,34 @@ main {
   height: 75px;
   margin-right:10px;
 }
+
+/* Info of stories article */
+
+.story-details {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Images in stories section */
+
+.image-stories {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-796x417.png");
+  background-position: 50% center;
+  min-width: 75px;
+  min-height: 75px;
+  max-width: 75px;
+  max-height: 75px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+/*Style in Funding rounds section */
+
+  .latest-funding a {
+    margin: 5px 0;
+  }
 
 
 /* Footer Style */
