@@ -117,8 +117,7 @@ main {
   justify-content: flex-end;
 }
 
-.article-2 {
-}
+
 
 .article-3 {
 }
@@ -177,6 +176,7 @@ main {
   font-size: 14px;
   color: white;
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 .main-article .metadata {
@@ -191,6 +191,31 @@ main {
 .main-article .link-decoration {
   color: #999a9a;
 }
+
+
+.latest-news{
+  margin: 0 20px;
+}
+
+.latest-news .title{
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+
+.stories {
+  padding: 8px;
+}
+
+.stories img{
+  width: 75px;
+  height: 75px;
+  margin-right:10px;
+}
+
+
 /* Footer Style */
 
 /* Media allow us to create a responsive design */
