@@ -34,7 +34,7 @@ body {
 /* main CSS Style */
 
 main {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 /* navbar */
@@ -84,13 +84,14 @@ main {
 
 .main-section {
   flex-direction: column;
-  color: #7F7F80;
+  color: #7f7f80;
 }
 
 .main-section h2 {
-  font-size: 2rem;
+  font-size: 20px;
   margin: 0;
   color: #fff;
+  padding-bottom: 10px;
 }
 
 .section-two {
@@ -132,11 +133,11 @@ main {
 }
 /* Article Ids */
 
-/* #first-article {
+#first-article {
   background-image: url("../img/image-1.jpg");
   background-position: bottom;
   background-size: cover;
-} */
+}
 
 #second-article {
   background-image: url("../img/image-2.jpg");
@@ -158,11 +159,48 @@ main {
 }
 
 .opacity {
-  background: rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));
 }
 
+.main-article {
+  margin: 5px;
+}
+
+.main-article .opacity {
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.main-article .category {
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main-article .metadata {
+  font-size: 12px;
+  color: #999a9a;
+}
+
+.metadata span,.metadata time,.metadata i{
+  margin-right: 5px;
+}
+
+.main-article .link-decoration {
+  color: #999a9a;
+}
 /* Footer Style */
 
 /* Media allow us to create a responsive design */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 768px) {
+  .main-section{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+  }
+  #first-article{
+    background-color: red;
+  }
 }
