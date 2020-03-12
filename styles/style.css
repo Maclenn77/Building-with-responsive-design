@@ -178,7 +178,6 @@ section {
 .section-headline li {
   border-bottom: 1px solid #eee;
   padding: 6px 0 6px 14px;
-
 }
 
 .section-headline li::before {
@@ -330,8 +329,8 @@ section {
 }
 
 .previous-price {
-  opacity: .5;
-  font-size: .8rem;
+  opacity: 0.5;
+  font-size: 0.8rem;
   text-decoration: line-through;
 }
 
@@ -437,23 +436,32 @@ section {
 /* Footer Style */
 
 .social-icons {
-  background-color: #222;
+  margin: 0;
 }
 
-.social-icons div {
-  margin: 20px auto;
+.wrapper {
+  padding: 20px 5px;
+  background-color: #131313;
+}
+
+.wrapper .flex-container {
+  margin: 20px 0 30px;
 }
 
 .icons {
-  padding: 10px;
-  border: 2px solid #555;
+  height: 20px;
+  width: 20px;
+  padding: 12px;
   border-radius: 100%;
-  margin: auto 5px;
-  background-color: #555;
+  margin: 0 3px;
+  background-color: #333;
+  text-align: center;
 }
 
 .icon {
   color: #fff;
+  font-size: 20px;
+  display: inline-block;
 }
 
 a.icons:hover {
@@ -466,13 +474,27 @@ a.icons:hover {
   color: #aaa;
   margin: auto 10px;
   text-decoration: none;
+  font-size: 13px;
 }
 
 a.other-links:hover {
   color: #fff;
 }
 
+.footer-legal {
+  color: #aaa;
+  padding: 35px 20px;
+  font-size: 13px;
+  background-color: #000;
+  text-align: center;
+  flex-direction: column;
+  line-height: 20px;
+}
 
+
+.footer-legal img {
+  height: 9px;
+}
 
 /* Media allow us to create a responsive design */
 @media screen and (min-width: 768px) {
