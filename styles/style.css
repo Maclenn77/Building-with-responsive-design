@@ -19,6 +19,18 @@ body a {
 .hide {
   display: none;
 }
+
+.hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.flex-container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Flex properties */
 .flex-container {
   display: flex;
@@ -170,9 +182,6 @@ section {
   margin: 0;
   color: #fff;
   padding-bottom: 10px;
-}
-
-.latest-news {
 }
 
 .section-three {
@@ -587,9 +596,63 @@ a.other-links:hover {
   .ads{
     text-align: left !important;
   }
-  
+
   .ads .link-decoration {
     padding: 10px 0 10px 126px;
+  }
+
+  /* Hide elements in resolutions more than 768px */
+
+  .flex-container-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-stories {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-796x417.png");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50%;
+    padding-left: 75%;
+  }
+
+  .stories {
+    flex-basis: 28%;
+    min-width: 28%%;
+    flex-direction: column;
+  }
+
+  .latest-news {
+    flex-direction: row;
+  }
+
+  .sublinks {
+    flex-direction: row;
+  }
+
+  .orange-bar {
+      padding: 0 5px;
+      border-right: 1px solid;
+  }
+
+  .funding-info {
+      flex-basis: 25%;
+      max-width: 25%;
+      margin-left: 15px;
+  }
+
+  .flex-two-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .categories-articles {
+    flex-basis: 48%;
+    max-width: 48%;
+    flex-direction: column;
+    margin-right: 5px;
   }
 
   /* navbar */
