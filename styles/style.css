@@ -303,7 +303,7 @@ section {
   background-size: cover;
 }
 
-.date-article {
+#date-article {
   font-size: 14px;
   color: #fff;
   display: none;
@@ -783,7 +783,6 @@ a.other-links:hover {
     position: relative;
     top: 50px;
     margin-right: 20px;
-    color: #fff;
   }
 
   #logo-tnw {
