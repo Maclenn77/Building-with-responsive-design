@@ -354,8 +354,8 @@ section {
 }
 
 .title {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 900;
   margin: 15px 0;
 }
 
@@ -370,6 +370,11 @@ section {
 }
 
 /* Info of stories article */
+.story-title {
+  margin: 10px 10px 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
 
 .story-details {
   color: #aaa;
@@ -593,7 +598,7 @@ a.other-links:hover {
     display: none;
   }
 
-  .ads{
+  .ads {
     text-align: left !important;
   }
 
@@ -615,31 +620,46 @@ a.other-links:hover {
     background-repeat: no-repeat;
     padding-top: 50%;
     padding-left: 75%;
+    min-width: 0;
+    min-height: 0;
   }
 
   .stories {
-    flex-basis: 28%;
-    min-width: 28%%;
+    flex-basis: 33.33%;
     flex-direction: column;
+    padding: 0;
+    margin-bottom: 20px;
   }
 
   .latest-news {
     flex-direction: row;
   }
 
+  .latest-news .flex-container-wrap {
+    margin: 30px 0;
+  }
+
   .sublinks {
     flex-direction: row;
   }
 
+  .sublinks a {
+    font-size: 16px;
+  }
+
+  .latest-funding a {
+    margin-right: 10px;
+  }
+
   .orange-bar {
-      padding: 0 5px;
-      border-right: 1px solid;
+    padding-right: 10px;
+    border-right: 1px solid;
   }
 
   .funding-info {
-      flex-basis: 25%;
-      max-width: 25%;
-      margin-left: 15px;
+    flex-basis: 25%;
+    max-width: 25%;
+    margin-left: 15px;
   }
 
   .flex-two-columns {
