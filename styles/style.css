@@ -188,10 +188,6 @@ section {
   justify-content: space-around;
 }
 
-/* .apps-section {
-  padding: 25px 0;
-} */
-
 .apps-section .title {
   margin-bottom: 14px;
   font-size: 28px;
@@ -574,6 +570,10 @@ a.other-links:hover {
   height: 9px;
 }
 
+#funding-info-extra {
+  display: none;
+}
+
 /* Media allow us to create a responsive design 795 to up */
 
 @media screen and (min-width: 795px) {
@@ -729,7 +729,24 @@ a.other-links:hover {
     padding: 10px 0 10px 20px;
   }
 
+  #first-article .opacity {
+    background-image: linear-gradient(rgba(255,69,0, 0.9), rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.9));
+  }
+
+  main {
+    max-width: 100%;
+  }
+  main section {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  footer {
+    width: 100%;
+  }
+
   .main-section {
+    max-width: 100%;
     height: 500px;
   }
 
@@ -757,6 +774,29 @@ a.other-links:hover {
     grid-row: 1/2;
   }
 
+  #date-article {
+    display: block;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-self: end;
+    z-index: 10;
+    position: relative;
+    top: 50px;
+    margin-right: 20px;
+    color: #fff;
+  }
+
+  #logo-tnw {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+    background-size: contain;
+    max-height: 80px;
+    background-repeat: no-repeat;
+    grid-row: 1 /2;
+    grid-column: 1 / 2;
+    z-index: 9;
+    margin: 50px;
+  }
+
   #first-article h2 {
     font-size: 56px;
     font-weight: 900;
@@ -778,4 +818,55 @@ a.other-links:hover {
   .story-details {
     font-size: 13px;
   }
+
+  /* Funding info grid. First, we change from Flex to grid */
+
+  .latest-funding {
+    display: grid;
+    grid-column: repeat(4, 1fr);
+    grid-row: repeat(10, 60px);
+    grid-column-gap: 20px;
+  }
+
+  .funding-info {
+    flex-basis: 23%;
+  }
+
+  #funding-info-extra {
+    display: inline;
+  }
+
+  #title-funding {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+
+  #sublinks-funding {
+    grid-column: 3 / 5;
+    grid-row: 1 /2;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #funding-info-width-1024 {
+    grid-column: 1 / 5;
+    grid-row: 3 / 11;
 }
+  .apps-section {
+    max-width: 70%;
+    margin:auto;
+  }
+
+  .flex-two-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .categories-articles {
+    flex-basis: 30%;
+    padding: 0;
+    margin: 10px;
+  }
