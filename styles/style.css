@@ -188,9 +188,9 @@ section {
   justify-content: space-around;
 }
 
-.apps-section {
+/* .apps-section {
   padding: 25px 0;
-}
+} */
 
 .apps-section .title {
   margin-bottom: 14px;
@@ -611,6 +611,7 @@ a.other-links:hover {
   .flex-container-space-between {
     display: flex;
     justify-content: space-between;
+    margin: 30px 12px 30px 0px;
   }
 
   .image-stories {
@@ -635,8 +636,9 @@ a.other-links:hover {
     flex-direction: row;
   }
 
-  .latest-news .flex-container-wrap {
-    margin: 30px 0;
+  /* .latest-news  */
+  .flex-container-wrap {
+    margin: 30px auto;
   }
 
   .sublinks {
@@ -657,22 +659,31 @@ a.other-links:hover {
   }
 
   .funding-info {
-    flex-basis: 25%;
-    max-width: 25%;
-    margin-left: 15px;
+    flex-basis: 30%;
   }
 
   .flex-two-columns {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .apps-section {
+    margin-right: 31px;
   }
 
   .categories-articles {
     flex-basis: 48%;
-    max-width: 48%;
     flex-direction: column;
-    margin-right: 5px;
+  }
+
+  .deals {
+    margin-right: 11px;
+  }
+
+  .footer-legal {
+    flex-direction: row;
   }
 
   /* navbar */
@@ -700,7 +711,9 @@ a.other-links:hover {
     grid-row: 2/3;
   }
 
-  /* first articles */
 }
 
-/* Media allow us to create a responsive design 768 to up */
+/* Media allow us to create a responsive design 1024 to up */
+@media screen and (min-width: 1024px) {
+  
+}
