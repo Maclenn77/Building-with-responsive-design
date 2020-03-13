@@ -51,6 +51,7 @@ body a {
 
 .link-decoration {
   text-decoration: none;
+  color: #999a9a;
 }
 
 .orange-link {
@@ -346,6 +347,36 @@ section {
   padding: 8px;
 }
 
+.story-details a {
+  color: #aaa;
+}
+
+.story-title a {
+  color: #000;
+}
+
+.latest-funding a {
+  margin: 5px 0;
+}
+
+.sublinks a {
+  font-size: 14px;
+}
+
+.funding-info a {
+  color: #555;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.funding-icons a {
+  color: #000;
+}
+
+.story-title a:hover {
+  color: var(--primary);
+}
+
 .stories img {
   width: 75px;
   height: 75px;
@@ -405,16 +436,8 @@ section {
 
 /* Style in Funding rounds section */
 
-.latest-funding a {
-  margin: 5px 0;
-}
-
 .sublinks {
   flex-direction: column;
-}
-
-.sublinks a {
-  font-size: 14px;
 }
 
 .funding-info {
@@ -437,12 +460,6 @@ section {
   color: #fff;
   font-size: 18px;
   padding: 10px 16px 10px 85px;
-}
-
-.funding-info a {
-  color: #555;
-  text-decoration: none;
-  font-size: 12px;
 }
 
 .source-link {
@@ -472,10 +489,6 @@ section {
   flex-direction: column;
   padding: 16px;
   border-bottom: 2px solid #ffe3dd;
-}
-
-.funding-icons a {
-  color: #000;
 }
 
 .funding-icons span {
@@ -589,10 +602,6 @@ a.other-links:hover {
 
   .ads {
     text-align: left !important;
-  }
-
-  .link-decoration {
-    color: #999a9a;
   }
 
   .ads .link-decoration {
