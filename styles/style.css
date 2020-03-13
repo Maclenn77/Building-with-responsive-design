@@ -307,10 +307,16 @@ section {
   background-size: cover;
 }
 
+.date-article {
+  font-size: 14px;
+  color: #fff;
+  display: none;
+}
+
 #second-article {
   background-image: url("../img/image-2.jpg");
   background-position: bottom;
-  background-size: cove9999r;
+  background-size: cover;
 }
 
 #third-article {
@@ -710,10 +716,66 @@ a.other-links:hover {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-
 }
 
 /* Media allow us to create a responsive design 1024 to up */
+
 @media screen and (min-width: 1024px) {
-  
+  .logo {
+    display: none;
+  }
+
+  .ads .link-decoration {
+    padding: 10px 0 10px 20px;
+  }
+
+  .main-section {
+    height: 500px;
+  }
+
+  #second-article {
+    height: auto;
+    width: auto;
+  }
+
+  #third-article {
+    height: auto;
+    width: auto;
+  }
+
+  /* fonts */
+
+  .category {
+    font-size: 14px;
+  }
+
+  .date-article {
+    display: block;
+    align-self: start;
+    justify-self: end;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #first-article h2 {
+    font-size: 56px;
+    font-weight: 900;
+  }
+
+  #second-article h2,
+  #third-article h2 {
+    font-size: 28px;
+  }
+
+  /* latest articles */
+
+  .stories {
+    flex-basis: 25%;
+  }
+  .story-title {
+    font-size: 16px;
+  }
+  .story-details {
+    font-size: 13px;
+  }
 }
