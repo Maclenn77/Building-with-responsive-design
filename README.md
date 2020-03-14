@@ -13,7 +13,7 @@ In this project, you’ll get the chance to build a responsive website. We’ll 
 
 ## Live demo
 
-<a href="https://raw.githack.com/Maclenn77/Building-with-responsive-design/feature-branch/index.html" target="_blank">Check it out</a>💻
+<a href="https://rawcdn.githack.com/Maclenn77/Building-with-responsive-design/b3fa18267ca9b41dfd5539624dc53c1b07c06fc9/index.html" target="_blank">Check it out</a>💻
 
 ## Getting Started
 
